@@ -13,7 +13,7 @@ export class HeaderComponentComponent implements OnInit {
 
 
   ngOnInit(){
-    this.apiService.getData().subscribe( (data) =>
+    this.apiService.getDataUAH().subscribe( (data) =>
       this.apiData = data
       
     )

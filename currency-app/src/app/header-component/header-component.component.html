@@ -1,22 +1,23 @@
 
-  <header>
-    <mat-toolbar class="text-bg-primary d-flex justify-content-center">
-      <span class="ps-4">Currency exchange against: UAH</span>
-    </mat-toolbar>
-    <table class="table table-info table-bordered">
-      <thead>
-        <tr>
-          <th scope="col">UAH</th>
-          <th scope="col">USD</th>
-          <th scope="col">EUR</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1 UAH</td>
-          <td>{{apiData?.['conversion_rates'].USD}}</td>
-          <td>{{apiData?.['conversion_rates'].EUR}}</td>
-        </tr>
-      </tbody>
-    </table>
-  </header>
+      <mat-toolbar class="text-bg-primary d-flex justify-content-center ps-5">
+        <span class="ps-4">Currency exchange against: UAH</span>
+      </mat-toolbar>
+      <table class="table row-cols-4 table-light">
+        <thead>
+          <tr>
+            <th scope="col">UAH</th>
+            <th scope="col">USD</th>
+            <th scope="col">EUR</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td scope="row">1 UAH</td>
+            <td scope="row">{{apiData?.['conversion_rates'].USD}}</td>
+            <td scope="row">{{apiData?.['conversion_rates'].EUR}}</td>
+          </tr>
+        </tbody>
+      </table>
+
+   
+

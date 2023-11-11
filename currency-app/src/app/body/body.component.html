@@ -1,0 +1,33 @@
+    <div class="container d-flex justify-content-end row-cols-4 customn-container">
+        <div class="row row-cols-1 row-gap-4">
+            <div class="col text-center">
+                <h3>Converted: {{convertedValue | currency}}</h3>
+            </div>
+            <div class="col">
+                <h1>Convert from</h1>
+                <select class="form-select" [(ngModel)]="currencyFrom" name="currencyFrom">
+                    <option value="" selected disabled>Convert from: </option>
+                    <option value="UAH">UAH</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                </select>
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Enter the amount of money" [(ngModel)]="inputValue" name="inputValue">
+            </div>
+            <div class="col">
+                <h1>Convert to</h1>
+                <select class="form-select" [(ngModel)]="currencyTo" name="currency">
+                    <option value="" selected disabled>Convert into: </option>
+                    <option value="UAH">UAH</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                </select>
+            </div>
+            <div class="row text-center">
+                <div class="col">
+                    <button  type="submit" class="btn btn-primary" (click)="convertCurrency()">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
